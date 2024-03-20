@@ -81,8 +81,10 @@ body {
 .coleccion > .productos {
     display: grid;
     width: 50%;
+    column-gap: 50px;
     grid-template-columns: 1fr 1fr 1fr;
 }
 .coleccion > .productos > .elemento img {
     width: 100%;
+    
 }
