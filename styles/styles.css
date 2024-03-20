@@ -1,5 +1,15 @@
+:root {
+    --color-fondo: #015959;
+    --color-secundario: #146B6B;
+    --color-terciario: #146B6B;
+    /* --color-fondo: #579292; */
+    --color-letras: #83A5A5;
+}
+
 body {
     font-family: "Share Tech Mono", monospace;
+    background-color: var(--color-fondo);
+    color: var(--color-letras)
 }
 
 .send_banner {
@@ -13,8 +23,8 @@ body {
 .topper {
     display: grid;
     grid-template-columns: 1fr 4fr 2fr;
-    background-color: white;
-    padding: 0px;
+    background-color: var(--color-fondo);
+    padding: 10px 0px;
    
 }
 
@@ -26,7 +36,9 @@ body {
     font-size: 1.5rem;
 }
 .topper > .left_column img {
+    
     width: 100%;
+    border-radius: 120px;
 }
 
 .topper > .right_column {
@@ -70,8 +82,9 @@ body {
 
 .coleccion {
     display: flex;
-    flex: column;
-    justify-content: center
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 100px;
     
 }
 .coleccion > .titulo {
@@ -79,12 +92,84 @@ body {
     justify-content: center;
 }
 .coleccion > .productos {
+    
     display: grid;
-    width: 50%;
-    column-gap: 50px;
+    width: 100%;
+    column-gap: 20px;
     grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+    padding: 50px;
+    
+   
+    
 }
 .coleccion > .productos > .elemento img {
-    width: 100%;
+    width: 100%; 
+    border-radius: 5px;;
+}
+
+.coleccion > .productos > .elemento img:hover {
+    transform: scale(1.1);
+}
+
+.coleccion > .productos > .elemento {
+    /* border: 3px double blue; */
+    margin: 30px;
+    padding: 20px;
+    border: 4px double var(--color-secundario);
+}
+
+.precio_producto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     
+}
+
+.precio_producto > .cesta {
+    display: flex;
+    align-items: center;
+}
+.precio_producto > .cesta button {
+    height: 70%;
+    width: 2rem;
+    padding: 5px;
+}
+.precio_producto > .cesta h1 {
+    height: 70%;
+    padding: 0px 10px;
+}
+
+.coleccion > .productos > .elemento h1 {
+    font-size: 1.5rem;;   
+}
+
+.coleccion > .productos > .elemento h2 {
+    font-size: 1rem;
+}
+
+.contacto {
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    margin: auto;
+
+}
+.contacto > .titulo {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.contacto > .email input {
+    width: 400px;
+    height: 60px;
+    border: 0px;
+    padding: 2px;
+    font-size: 1.2rem;
+}
+.contacto > .email button {
+    width: 40px;
+    height: 60px;
+    paddin: 2px;
+
 }
