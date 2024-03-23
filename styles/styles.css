@@ -13,7 +13,7 @@ body {
 }
 
 .send_banner {
-    background-color: black;
+    background-color: var(--color-secundario);
     color: white;
     display: flex;
     justify-content: center;
@@ -31,9 +31,10 @@ body {
 .topper > .center_column {
     display: flex;
     justify-content: space-around;
-    margin-right: 50%;
+    width: 100%;
     align-items: center;
     font-size: 1.5rem;
+    margin-left: auto;
 }
 .topper > .left_column img {
     
@@ -148,14 +149,14 @@ body {
     font-size: 1rem;
 }
 
-.contacto {
+.contacto_footer {
     display: flex;
     justify-items: center;
     flex-direction: column;
     margin: auto;
 
 }
-.contacto > .titulo {
+.contacto_footer > .titulo {
     font-size: 3rem;
     margin-bottom: 20px;
 }
