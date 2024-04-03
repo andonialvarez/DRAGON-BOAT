@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/helpers.css">
+    <link rel="stylesheet" href="main.js">
     
 </head>
 <body>
@@ -26,141 +27,77 @@
         </div>
         <div class="right_column">
             <div class="buscar"><i class="fa-solid fa-magnifying-glass"></i></div>
-            <div class="login"><i class="fa-solid fa-cart-shopping"></i></script></div>
-            <div class="cesta"><i class="fa-solid fa-cart-shopping"></i></div>
+            <div class="login"><i class="fa-solid fa-person"></i></div>
+            <div class="cesta"><a href="./carrito.html"><i class="fa-solid fa-cart-shopping"></i><span class="numerito">0</span></a></div>
         </div>
     </div>
     <div class="fixed_img"><img src="" alt="">
         <h1>Compra ya</h1>
     </div>
     <div class="coleccion">
-        <div class="titulo">Productos</div>
-        <div class="productos">
-            <div class="elemento">
-                <img src="images/logo/logo.webp" alt="">
-                <h1>Titulo del producto</h1>
-                <h2>Descripcion: Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim numquam cumque itaque ratione quisquam corrupti molestiae aperiam qui aut quos.</h2>
-                <div class="precio_producto">
-                    <div class="precio">
-                        <h1>Precio</h1>
-                        <h2>32 €</h2></div>
-                    <div class="cesta">
-                        <button>-</button>
-                        <h1>0</h1>
-                        <button>+</button>
-                    </div>
-                    
-                </div>
-            </div>
-            <div class="elemento">
-                <img src="images/logo/logo.webp" alt="">
-                <h1>Titulo del producto</h1>
-                <h2>Descripcion: Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim numquam cumque itaque ratione quisquam corrupti molestiae aperiam qui aut quos.</h2>
-                <div class="precio_producto">
-                    <div class="precio">
-                        <h1>Precio</h1>
-                        <h2>32 €</h2></div>
-                    <div class="cesta">
-                        <button>-</button>
-                        <h1>0</h1>
-                        <button>+</button>
-                    </div>
-                    
-                </div>
-            </div>
-            <div class="elemento">
-                <img src="images/logo/logo.webp" alt="">
-                <h1>Titulo del producto</h1>
-                <h2>Descripcion: Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim numquam cumque itaque ratione quisquam corrupti molestiae aperiam qui aut quos.</h2>
-                <div class="precio_producto">
-                    <div class="precio">
-                        <h1>Precio</h1>
-                        <h2>32 €</h2></div>
-                    <div class="cesta">
-                        <button>-</button>
-                        <h1>0</h1>
-                        <button>+</button>
-                    </div>
-                    
-                </div>
-            </div>
-            <div class="elemento">
-                <img src="images/logo/logo.webp" alt="">
-                <h1>Titulo del producto</h1>
-                <h2>Descripcion: Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim numquam cumque itaque ratione quisquam corrupti molestiae aperiam qui aut quos.</h2>
-                <div class="precio_producto">
-                    <div class="precio">
-                        <h1>Precio</h1>
-                        <h2>32 €</h2></div>
-                    <div class="cesta">
-                        <button>-</button>
-                        <h1>0</h1>
-                        <button>+</button>
-                    </div>
-                    
-                </div>
-            </div>
-            <div class="elemento">
-                <img src="images/logo/logo.webp" alt="">
-                <h1>Titulo del producto</h1>
-                <h2>Descripcion: Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim numquam cumque itaque ratione quisquam corrupti molestiae aperiam qui aut quos.</h2>
-                <div class="precio_producto">
-                    <div class="precio">
-                        <h1>Precio</h1>
-                        <h2>32 €</h2></div>
-                    <div class="cesta">
-                        <button>-</button>
-                        <h1>0</h1>
-                        <button>+</button>
-                    </div>
-                    
-                </div>
-            </div>
-            <div class="elemento">
-                <img src="images/logo/logo.webp" alt="">
-                <h1>Titulo del producto</h1>
-                <h2>Descripcion: Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim numquam cumque itaque ratione quisquam corrupti molestiae aperiam qui aut quos.</h2>
-                <div class="precio_producto">
-                    <div class="precio">
-                        <h1>Precio</h1>
-                        <h2>32 €</h2></div>
-                    <div class="cesta">
-                        <button>-</button>
-                        <h1>0</h1>
-                        <button>+</button>
-                    </div>
-                    
-                </div>
-            </div>
+        <!-- <div class="titulo" >Productos </div> -->
+        <div class="aside">
+            <div class="aside-header">Logo</div>
+            <ul class="menu">
+                <li>
+                    <button class="boton-menu active"><i class="fa-solid fa-tag"></i>Todos los productos</button>
+                </li>
+                <li>
+                    <button class="boton-menu"><i class="fa-solid fa-tag"></i>Abrigos</button>
+                </li>
+                <li>
+                    <button class="boton-menu"><i class="fa-solid fa-tag"></i>Camisetas</button>
+                </li>
+                <li>
+                    <button class="boton-menu"><i class="fa-solid fa-tag"></i>Pantalones</button>
+                </li>
+                <li>
+                    <button class="boton-menu"><i class="fa-solid fa-tag"></i>Otros</button>
+                </li>
+                <li>
+                    <a class= "boton-menu boton-carrito" href="./carrito.html">Carrito <i class="fa-solid fa-cart-shopping"></i><span class="numerito">44</span></a>
+                </li>
+            
+            </ul>
+            <div class="aside-footer">@Filetex</div>
+        </div>
+        <div id="contenedor-productos" class="productos">
+            <!-- <h2>Todos los productos</h2> -->
+            <script src="./main.js"></script>
+        </div>
+           
+            
+            
+            
+            
            
 
     </div>
-    <div class="coleccion">
-        <div class="titulo">Informacion</div>
+    <div class="informacion">
+       <p>Informacion</p>
         <div class="productos">
-            <div class="elemento">
+            <div class="elemento" >
                 <img src="images/logo/logo.webp" alt="">
                 <h1>Quienes somos</h1>
                 <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum nulla eaque ipsa dolores, doloribus dolor provident perspiciatis id voluptates eos itaque, alias molestias velit optio modi temporibus. Quasi reprehenderit nulla, voluptatem possimus mollitia quae repellendus tempore eveniet at adipisci neque perspiciatis, blanditiis, facilis ipsam nostrum doloremque quo earum nam eum.</h2>
             </div>
-        <div class="elemento">
-            <img src="images/logo/logo.webp" alt="">
-            <h1>Fuente de inspiración</h1>
-            <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum nulla eaque ipsa dolores, doloribus dolor provident perspiciatis id voluptates eos itaque, alias molestias velit optio modi temporibus. Quasi reprehenderit nulla, voluptatem possimus mollitia quae repellendus tempore eveniet at adipisci neque perspiciatis, blanditiis, facilis ipsam nostrum doloremque quo earum nam eum.</h2>
+            <div class="elemento">
+                <img src="images/logo/logo.webp" alt="">
+                <h1>Fuente de inspiración</h1>
+                <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum nulla eaque ipsa dolores, doloribus dolor provident perspiciatis id voluptates eos itaque, alias molestias velit optio modi temporibus. Quasi reprehenderit nulla, voluptatem possimus mollitia quae repellendus tempore eveniet at adipisci neque perspiciatis, blanditiis, facilis ipsam nostrum doloremque quo earum nam eum.</h2>
+            </div>
+            <div class="elemento">
+                <img src="images/logo/logo.webp" alt="">
+                <h1>Donde estamos</h1>
+                <label for=""><i class="fa-solid fa-location-dot"></i></label>
+                <label for="">Centro deportivo Getxo</label>
+                <div class="spacer20"></div>
+                <label for=""><i class="fa-solid fa-location-dot"></i></label>
+                <label for="">Garaioltza 172</label><br>
+            </div>
         </div>
-        <div class="elemento">
-            <img src="images/logo/logo.webp" alt="">
-            <h1>Donde estamos</h1>
-            <label for=""><i class="fa-solid fa-location-dot"></i></label>
-            <label for="">Centro deportivo Getxo</label>
-            <div class="spacer20"></div>
-            <label for=""><i class="fa-solid fa-location-dot"></i></label>
-            <label for="">Garaioltza 172</label><br>
 
-        </div>
-        
-
-    </div>
+</div>
 
     <div class="contacto_footer">
         <div class="titulo">Contacta con nosotros</div>
@@ -173,5 +110,7 @@
     <div class="footer">Hola
 
     </div>
+
+    <script src="productos.js"></script>
 </body>
 </html>
