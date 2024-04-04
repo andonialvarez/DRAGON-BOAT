@@ -85,9 +85,13 @@ body {
 }
 
 .footer {
-    height: 1500px;;
+    height: 1500px;
 }
 
+/* main h2 {
+    width: 100%;
+    padding: 50px;
+} */
 .coleccion {
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -136,7 +140,7 @@ body {
     padding-right: 0px;
     position: relative;
     border: none;
-    color: white
+    color: white;
 }
 .boton-menu.active::before  {
     content:'';
@@ -290,21 +294,19 @@ ul {
 .carrito-producto {
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
     background-color: var(--color-terciario);
     margin: 5px;
-    max-width: 100%;
+    width: 100%;
     border-radius: 15px;
     align-items: center;
-    padding-right: 1.5rem;
     
 }
 
 .carrito-productos {
     background-color: var(--color-primario);
     border-radius: 1rem;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+    /* border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0; */
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -324,12 +326,13 @@ ul {
     display: flex;
     justify-content: space-between;
     background-color: var(--color-primario);
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
+    /* border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem; */
     align-items: center;
-    margin: 0;
+    margin: 10px 0;
     padding: 0 10px;
     height: 5rem;
+    border-radius: 1rem;
 }
 
 .carrito-acciones > .carrito-acciones-izquierda {
@@ -387,17 +390,30 @@ ul {
     
 }
 .informacion > .productos {
+    background-color: var(--color-secundario);
     display: flex;
     gap: 5rem;
-    width: 100vh;
     padding: 5px;
-    justify-content: space-between;
+    justify-content: center;
+    width: 100%;
+    justify-content: space-around;
+    border-radius: 15px;
+    padding: 10px;
+
 }
 .informacion > .productos > .elemento {
     display: flex;
     flex-direction: column;
-    width: 100vh;
+    width: 30vh;
 }
 .informacion > .productos > .elemento img {
-    width:50%
+    width:100%;
+    border-radius: 15px;
+    
+}
+.informacion > .productos > .elemento h1 {
+    font-size: 1rem;
+}
+.informacion > .productos > .elemento h2 {
+    font-size: 0.5rem;
 }

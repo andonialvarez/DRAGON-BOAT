@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/helpers.css">
     <link rel="stylesheet" href="productos.js">
+    <link rel="stylesheet" href="carrito.js">
 
 </head>
 <body>
@@ -42,7 +43,7 @@
             </li>
 
                 <a class= "boton-menu boton-carrito active" href="./carrito.html">Carrito
-                    <i class="fa-solid fa-cart-shopping"></i><span class="numerito">0</span></a>
+                    <i class="fa-solid fa-cart-shopping"></i><span id ="numerito" class="numerito">0</span></a>
             </li>
 
         </ul>
@@ -51,9 +52,9 @@
     <!-- <main> -->
     <div class="contenedor_carrito">
         <h2 class="titulo-principal">Carrito<h2>
-        <p class="carrito-vacio">Tu carrito esta vacio. <i class="fa-regular fa-face-sad-tear"></i></p>
-        <div class="carrito-productos disabled">
-            <div class="carrito-producto ">
+        <p id="carrito-vacio" class="carrito-vacio">Tu carrito esta vacio. <i class="fa-regular fa-face-sad-tear"></i></p>
+        <div id="carrito-productos" class="carrito-productos">
+            <!-- <div class="carrito-producto disabled">
                 <img class="carrito-producto-imagen" src="images/background/fixed-background.webp" alt="">
                 <div class="carrito-producto-titulo">
                     <small>Titulo</small>
@@ -112,11 +113,12 @@
                 <div class="carrito-producto-subtotal">
                     <small>Subtotal</small>
                     <p>1000</p>
-                </div>
-                <div class="carrito-producto-eliminar"><i class="fa-solid fa-trash"></i></div>
+                </div> 
+                <div class="carrito-producto-eliminar"><i class="fa-solid fa-trash"></i></div>-->
             </div>
         </div>
-        <div class="carrito-acciones disabled">
+        <div class="spacer"></div>
+        <div id="carrito-acciones" class ="carrito-acciones disabled">
             <div class="carrito-acciones-izquierda">
                 <button class="accion-vaciar-carrito">Vaciar carrito</button>
             </div>
@@ -129,7 +131,7 @@
             </div>
 
         </div>
-        <p class="carrito-comprado disabled">Gracias por su compra. <i class="fa-regular fa-face-smile-beam"></i></p>
+        <p id="carrito-comprado" class="carrito-comprado disabled">Gracias por su compra. <i class="fa-regular fa-face-smile-beam"></i></p>
 
     </div>
 </div>
@@ -171,3 +173,5 @@
             <button>Go</button>
         </div>
     </div>
+
+    <script src="./carrito.js"></script>
