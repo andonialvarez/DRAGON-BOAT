@@ -288,6 +288,8 @@ if(productosEnCarritoLS) {
 }
 
 function agregarAlCarrito(e) {
+
+    
     const idBoton = e.currentTarget.id;
     const productoAgregado = productos.find(producto => producto.id === idBoton);
 
