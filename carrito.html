@@ -29,7 +29,7 @@
         <div class="right_column">
             <div class="buscar"><i class="fa-solid fa-magnifying-glass"></i></div>
             <div class="login"><i class="fa-solid fa-cart-shopping"></i></script></div>
-            <div class="cesta"><a href="./carrito.html"><i class="fa-solid fa-cart-shopping"></i><span class="numerito">0</span></a></div>
+            <div class="cesta"><a href="./carrito.html"><i class="fa-solid fa-cart-shopping"></i></a></div>
         </div>
     </div>
     <div class="fixed_img"><img src="" alt="">
@@ -43,7 +43,7 @@
             </li>
 
                 <a class= "boton-menu boton-carrito active" href="./carrito.html">Carrito
-                    <i class="fa-solid fa-cart-shopping"></i><span id ="numerito" class="numerito">0</span></a>
+                    <i class="fa-solid fa-cart-shopping"></i></a>
             </li>
 
         </ul>
@@ -53,6 +53,8 @@
     <div class="contenedor_carrito">
         <h2 class="titulo-principal">Carrito<h2>
         <p id="carrito-vacio" class="carrito-vacio">Tu carrito esta vacio. <i class="fa-regular fa-face-sad-tear"></i></p>
+        <p id="carrito-comprado" class="carrito-comprado disabled">Gracias por su compra. <i class="fa-regular fa-face-smile-beam"></i></p>
+
         <div id="carrito-productos" class="carrito-productos">
             <!-- <div class="carrito-producto disabled">
                 <img class="carrito-producto-imagen" src="images/background/fixed-background.webp" alt="">
@@ -120,18 +122,18 @@
         <div class="spacer"></div>
         <div id="carrito-acciones" class ="carrito-acciones disabled">
             <div class="carrito-acciones-izquierda">
-                <button class="accion-vaciar-carrito">Vaciar carrito</button>
+                <button id="accion-vaciar-carrito" class ="accion-vaciar-carrito">Vaciar carrito</button>
             </div>
             <div class="carrito-acciones-derecha">
                 <div class="carrito-acciones-total">
                     <p>Total:</p>
-                    <p id="total">1000€</p>
+                    <p id="total"></p>
                 </div>
-                <button class="accion-comprar-carrito">Comprar ahora</button>
+                <button id= "accion-comprar-carrito" class ="accion-comprar-carrito">Comprar ahora</button>
             </div>
 
         </div>
-        <p id="carrito-comprado" class="carrito-comprado disabled">Gracias por su compra. <i class="fa-regular fa-face-smile-beam"></i></p>
+        
 
     </div>
 </div>

@@ -125,6 +125,7 @@ const botonesCategorias = document.querySelectorAll(".boton-categoria");
 const tituloPrincipal = document.querySelector("#tituloPrincipal");
 let botonesAgregar = document.querySelectorAll(".boton-agregar");
 const numerito = document.querySelector("#numerito")
+const numeritoTop = document.querySelector("#numeritoTop")
 
 function cargarProductos(productosElegidos) {
     contenedorProductos.innerHTML = "";
@@ -216,7 +217,10 @@ function agregarAlCarrito(e) {
 function actualizarNumerito() {
     let nuevoNumerito = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0)
     numerito.innerText = nuevoNumerito;
+    numeritoTop.innerText = nuevoNumerito;
 }
+
+
 /* <div class="elemento">
                 <img src="images/logo/logo.webp" alt="">
                 <h1>Titulo del producto</h1>

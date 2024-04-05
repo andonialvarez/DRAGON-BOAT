@@ -6,11 +6,13 @@ const contenedorCarritoProductos = document.querySelector("#carrito-productos")
 const contenedorCarritoAcciones = document.querySelector("#carrito-acciones")
 const contenedorCarritoComprado = document.querySelector("#carrito-comprado")
 let botonesEliminar = document.querySelectorAll(".carrito-producto-eliminar")
-
+const botonVaciar = document.querySelector("#accion-vaciar-carrito")
+const contenedorTotal = document.querySelector("#total")
+const botonComprar = document.querySelector("#accion-comprar-carrito")
 
 
 function cargarProductosCarrito() {
-    if(productosEnCarrito) {
+    if(productosEnCarrito && productosEnCarrito.length > 0) {
 
 
         contenedorCarritoVacio.classList.add("disabled")
@@ -56,6 +58,7 @@ function cargarProductosCarrito() {
         contenedorCarritoComprado.classList.add("disabled")
     }
     actualizarBotonesEliminar();
+    actualizarTotal();
 }
 
 cargarProductosCarrito();
@@ -79,7 +82,30 @@ function eliminarDelCarrito(e) {
 
     localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito))
 }
+botonVaciar.addEventListener("click", vaciarCarrito)
+botonComprar.addEventListener("click", comprarCarrito)
+function vaciarCarrito() {
+    productosEnCarrito.length = 0;
+    localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
+    cargarProductosCarrito();
+    
+}
 
+function actualizarTotal() {
+    const totalCalculado = productosEnCarrito.reduce((acc, producto) => acc + (producto.precio * producto.cantidad), 0)
+    total.innerText = `${totalCalculado}  €`;
+
+}
+
+
+function comprarCarrito() {
+    productosEnCarrito.length = 0;
+    localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
+    contenedorCarritoVacio.classList.add("disabled")
+    contenedorCarritoProductos.classList.add("disabled")
+    contenedorCarritoAcciones.classList.add("disabled")
+    contenedorCarritoComprado.classList.remove("disabled")
+}
 /* <div class="carrito-producto ">
                 <img class="carrito-producto-imagen" src="images/background/fixed-background.webp" alt="">
                 <div class="carrito-producto-titulo">

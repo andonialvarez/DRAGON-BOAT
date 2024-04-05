@@ -397,8 +397,9 @@ ul {
     justify-content: center;
     width: 100%;
     justify-content: space-around;
+    gap: 100px;
     border-radius: 15px;
-    padding: 10px;
+    padding: 50px 10px;
 
 }
 .informacion > .productos > .elemento {
