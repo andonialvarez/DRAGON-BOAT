@@ -5,6 +5,7 @@
     /* --color-fondo: #579292; */
     --color-letras: #83A5A5;
     font-family: "Share Tech Mono", monospace;
+
     --color-fondo: #B8E2C8;
     --color-secundario: #F4AFAB;
     --color-terciario: #3685B5;
@@ -16,16 +17,17 @@
 
 body {
     color: var(--color-letras);
-    background-image: url(../images/background/Nubes-2.1.jpg);
+   background-color: var(--color-fondo);
     background-size: 100% auto; /* Ancho al 100%, alto automático */
     background-repeat: repeat; /* Repetir la imagen verticalmente */
     background-position: center; /* Centra la imagen horizontalmente */
+    max-width: 100%;
     
 }
 
 .send_banner {
     background: rgb(66,61,135);
-    background: linear-gradient(144deg, rgba(66,61,135,1) 1%, rgba(35,133,107,0.9501050420168067) 23%, rgba(25,177,208,1) 72%);
+    background: linear-gradient(90deg, rgba(66,61,135,1) 1%, rgba(35,133,107,0.9501050420168067) 23%, rgba(25,177,208,1) 72%);
     color: white;
     display: flex;
     justify-content: center;
@@ -68,6 +70,7 @@ body {
    background-attachment: fixed;
    background-position: center;
    background-size: cover;
+   border-radius: 1rem;
    z-index: 1;
    display: flex;
    justify-content: center;
@@ -116,6 +119,10 @@ body {
     padding-right: 0px;
 
 }
+.coleccion > .aside a {
+    width: 100%;
+    
+}
 .menu {
     display: flex;
     flex-direction: column;
@@ -135,10 +142,17 @@ body {
     gap: 1rem;
     padding: 0.5rem;
     text-decoration: none;
+    background: rgb(66,61,135);
+    background: linear-gradient(270deg, rgba(66,61,135,1) 1%, rgba(35,133,107,0.9501050420168067) 23%, rgba(25,177,208,1) 72%);
+    opacity: 0.9;
+
+    
+    
 }
 .boton-menu:hover {
     background-color: var(--color-primario);
     color: white;
+    
 }
 
 .boton-menu.active {
@@ -156,7 +170,7 @@ body {
     bottom: 100%;
     right: -2px;
     border-bottom-right-radius: .5rem;
-    box-shadow: 0 1rem 0 var(--color-primario);
+    /* box-shadow: 0 1rem 0 var(--color-primario); */
 
 }
 .boton-menu.active::after  {
@@ -167,7 +181,7 @@ body {
     top: 100%;
     right: -2px;
     border-top-right-radius: .5rem;
-    box-shadow: 0 -1rem 0 var(--color-primario);
+    /* box-shadow: 0 -1rem 0 var(--color-primario); */
 
 }
 .boton-carrito {
@@ -194,14 +208,14 @@ ul {
 .coleccion > .productos {
     
     display: grid;
-    width: 100%;
+    width: 95%;
     column-gap: 20px;
     grid-template-columns: repeat(3, 1fr);
     margin: 0px;
     border-radius: 20px;
     padding: 2rem;
     background: rgb(66,61,135);
-    background: linear-gradient(144deg, rgba(66,61,135,1) 1%, rgba(35,133,107,0.9501050420168067) 23%, rgba(25,177,208,1) 72%);
+    background: linear-gradient(90deg, rgba(66,61,135,1) 1%, rgba(35,133,107,0.9501050420168067) 23%, rgba(25,177,208,1) 72%);
     opacity: 0.9;
 
      
@@ -314,6 +328,10 @@ ul {
     align-items: center;
     
 }
+.center_column  a{
+    text-decoration: none;
+    color: var(--color-letras)
+}
 
 .carrito-productos {
     background-color: var(--color-primario);
@@ -399,26 +417,36 @@ ul {
 .informacion {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
+    width: 80%;
+    justify-content: center;
+    margin: auto;
     
 }
 .informacion > .productos {
     background-color: var(--color-secundario);
     display: flex;
     gap: 5rem;
-    padding: 5px;
     justify-content: center;
+    gap: 2rem;
     width: 100%;
-    justify-content: space-around;
-    gap: 100px;
-    border-radius: 15px;
+    gap: 10rem;
+    border-radius: 15px;    
     padding: 50px 10px;
+    background: rgb(66,61,135);
+    background: linear-gradient(144deg, rgba(66,61,135,1) 1%, rgba(35,133,107,0.9501050420168067) 23%, rgba(25,177,208,1) 72%);
+    opacity: 0.9;
+    border: 4px double var(--color-secundario);
+    border-radius: 1rem;
 
 }
 .informacion > .productos > .elemento {
     display: flex;
     flex-direction: column;
     width: 30vh;
+    border: 4px double var(--color-secundario);
+    padding: 10px;
+    border-radius: 1rem;
 }
 .informacion > .productos > .elemento img {
     width:100%;

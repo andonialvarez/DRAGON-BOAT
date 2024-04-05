@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/helpers.css">
     <link rel="stylesheet" href="main.js">
+    <link rel="stylesheet" href="./styles/mediaquery.css">
+    <link rel="stylesheet" href="menu.js">
     
 </head>
 <body>
@@ -22,8 +24,8 @@
         </div>
         <div class="center_column">
             <div class="home">Home</div>
-            <div class="productos">Productos</div>
-            <div class="contacto">Contacto</div>
+            <div class="productos"><a href="#tituloPrincipal">Productos</a></div>
+            <div class="contacto"><a href="#contacto">Contacto</div></a>
         </div>
         <div class="right_column">
             <div class="buscar"><i class="fa-solid fa-magnifying-glass"></i></div>
@@ -58,7 +60,7 @@
                     <button id= "otros" class="boton-menu boton-categoria"><i class="fa-solid fa-tag"></i>Otros</button>
                 </li>
                 <li>
-                    <a class= "boton-menu boton-carrito" href="./carrito.html">Carrito <i  class="fa-solid fa-cart-shopping"></i><span id ="numerito" class="numerito">0</span></a>
+                    <a class= "boton-menu boton-carrito" href="./carrito.html"><i  class="fa-solid fa-cart-shopping"></i>Carrito <span id ="numerito" class="numerito">0</span></a>
                 </li>
             
             </ul>
@@ -104,7 +106,7 @@
 
 </div>
 
-    <div class="contacto_footer">
+    <div id="contacto" class="contacto_footer">
         <div class="titulo">Contacta con nosotros</div>
         <div class="email">
             <input type="text" id="" placeholder="Introduce tu email">
@@ -117,5 +119,6 @@
     </div>
 
     <script src="productos.js"></script>
+    <script src="menu.js"></script>
 </body>
 </html>
