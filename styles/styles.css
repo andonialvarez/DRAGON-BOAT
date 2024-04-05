@@ -443,7 +443,7 @@ ul {
 .informacion > .productos > .elemento {
     display: flex;
     flex-direction: column;
-    width: 30vh;
+    width: cover;
     border: 4px double var(--color-secundario);
     padding: 10px;
     border-radius: 1rem;

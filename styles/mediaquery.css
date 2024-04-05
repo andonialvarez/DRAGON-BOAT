@@ -69,8 +69,8 @@
     .coleccion > .productos {
         display: flex;
         grid-template-columns: repeat(1, 1fr);
-        width: 180%;
-        margin-left: -150px;
+        width: 250%;
+        margin-left: -180px;
         flex-direction: column;
         padding: 0.5rem;
 
@@ -121,6 +121,16 @@
         row-gap: 1rem;
     }
     
+    .informacion > .productos {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    .informacion > .productos > .elemento {
+        width: 90%;
+        margin: auto;
+    }
+
 
 }
 @media screen and (max-width: 400px) {
