@@ -35,7 +35,11 @@
         opacity: 1;
         visibility: visible;
         z-index: 0;
-        background-color: red;
+        background: rgb(66,61,135);
+        background: linear-gradient(90deg, rgba(66,61,135,1) 1%, rgba(35,133,107,0.9501050420168067) 23%, rgba(25,177,208,1) 72%);
+        opacity: 0.9;
+        border-radius: 1rem;
+
     }
 
     /* .coleccion > .aside {
