@@ -15,22 +15,28 @@
 }
 
 body {
-    background-color: var(--color-fondo);
-    color: var(--color-letras)
+    color: var(--color-letras);
+    background-image: url(../images/background/Nubes-2.1.jpg);
+    background-size: 100% auto; /* Ancho al 100%, alto automático */
+    background-repeat: repeat; /* Repetir la imagen verticalmente */
+    background-position: center; /* Centra la imagen horizontalmente */
+    
 }
 
 .send_banner {
-    background-color: var(--color-secundario);
+    background: rgb(66,61,135);
+    background: linear-gradient(144deg, rgba(66,61,135,1) 1%, rgba(35,133,107,0.9501050420168067) 23%, rgba(25,177,208,1) 72%);
     color: white;
     display: flex;
     justify-content: center;
     padding: 10px;
+    border-radius: 1rem;
+    opacity: 0.7;
 }
 
 .topper {
     display: grid;
     grid-template-columns: 1fr 4fr 2fr;
-    background-color: var(--color-fondo);
     padding: 10px 0px;
    
 }
@@ -192,14 +198,18 @@ ul {
     column-gap: 20px;
     grid-template-columns: repeat(3, 1fr);
     margin: 0px;
-    background-color: var(--color-primario);
     border-radius: 20px;
     padding: 2rem;
+    background: rgb(66,61,135);
+    background: linear-gradient(144deg, rgba(66,61,135,1) 1%, rgba(35,133,107,0.9501050420168067) 23%, rgba(25,177,208,1) 72%);
+    opacity: 0.9;
+
+     
     
 }
 .coleccion > .productos > .elemento img {
     max-width: 100%; 
-    border-radius: 5px;;
+    border-radius: 5px;
 }
 
 .coleccion > .productos > .elemento img:hover {
@@ -211,6 +221,9 @@ ul {
     margin: 30px;
     padding: 20px;
     border: 4px double var(--color-secundario);
+    background-color: var(--color-primario);
+    border-radius: 1rem;
+
 }
 .coleccion > .productos > .elemento h2 {
     font-size: 0.5rem;

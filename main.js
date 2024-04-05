@@ -30,6 +30,36 @@ const productos = [
         precio: 1000
     },
     {
+        id: "Abrigo-01",
+        titulo: "Abrigo 01",
+        imagen: "./images/Elemento1/Elemento1-1.webp",
+        categoria: {
+            nombre: "Abrigos",
+            id: "abrigos"
+        },
+        precio: 1000
+    },
+    {
+        id: "Abrigo-02",
+        titulo: "Abrigo 02",
+        imagen: "./images/Elemento1/Elemento1-1.webp",
+        categoria: {
+            nombre: "Abrigos",
+            id: "abrigos"
+        },
+        precio: 1000
+    },
+    {
+        id: "abrigo-03",
+        titulo: "Abrigo 03",
+        imagen: "./images/Elemento1/Elemento1-1.webp",
+        categoria: {
+            nombre: "Abrigos",
+            id: "abrigos"
+        },
+        precio: 1000
+    },
+    {
         id: "pantalones-01",
         titulo: "Pantalones 01",
         imagen: "./images/Elemento2/Elemento2-1.webp",
@@ -58,6 +88,66 @@ const productos = [
             id: "pantalones"
         },
         precio: 2000
+    },
+    {
+        id: "pantalones-01",
+        titulo: "Pantalones 01",
+        imagen: "./images/Elemento2/Elemento2-1.webp",
+        categoria: {
+            nombre: "Pantalones",
+            id: "pantalones"
+        },
+        precio: 2000
+    },
+    {
+        id: "pantalones-02",
+        titulo: "Pantalones 02",
+        imagen: "./images/Elemento2/Elemento2-1.webp",
+        categoria: {
+            nombre: "Pantalones",
+            id: "pantalones"
+        },
+        precio: 2000
+    },
+    {
+        id: "pantalones-03",
+        titulo: "Pantalones 03",
+        imagen: "./images/Elemento2/Elemento2-1.webp",
+        categoria: {
+            nombre: "Pantalones",
+            id: "pantalones"
+        },
+        precio: 2000
+    },
+    {
+        id: "zapatillas-01",
+        titulo: "Zapatillas 01",
+        imagen: "./images/Elemento3/Elemento3-1.webp",
+        categoria: {
+            nombre: "Zapatillas",
+            id: "zapatillas"
+        },
+        precio: 3000
+    },
+    {
+        id: "zapatillas-02",
+        titulo: "Zapatillas 02",
+        imagen: "./images/Elemento3/Elemento3-1.webp",
+        categoria: {
+            nombre: "Zapatillas",
+            id: "zapatillas"
+        },
+        precio: 3000
+    },
+    {
+        id: "zapatillas-03",
+        titulo: "Zapatillas 03",
+        imagen: "./images/Elemento3/Elemento3-1.webp",
+        categoria: {
+            nombre: "Zapatillas",
+            id: "zapatillas"
+        },
+        precio: 3000
     },
     {
         id: "zapatillas-01",
