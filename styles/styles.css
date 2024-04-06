@@ -459,3 +459,7 @@ ul {
 .informacion > .productos > .elemento h2 {
     font-size: 0.5rem;
 }
+
+.volver {
+    display:none ;
+}
