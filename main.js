@@ -270,7 +270,8 @@ botonesCategorias.forEach(boton => {
         else {
             cargarProductos(productos)
             tituloPrincipal.innerText = "Todos los productos"
-            console.log("else")
+            aside.classList.remove("aside-visible");
+            aside.classList.add("aside");
         }
         
     })
