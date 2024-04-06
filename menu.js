@@ -7,11 +7,9 @@ openMenu.addEventListener("click", () => {
     aside.classList.add("aside-visible");
     aside.classList.remove("aside");
     volver.classList.remove("volver")
-    console.log("open")
 })
 
 closeMenu.addEventListener("click", () => {
     aside.classList.remove("aside-visible");
     aside.classList.add("aside");
-    cargarProductos(productos);
 })

@@ -257,12 +257,22 @@ botonesCategorias.forEach(boton => {
             const productoCategoria = productos.find(producto => producto.categoria.id === e.currentTarget.id)
             cargarProductos(productosBoton);
             tituloPrincipal.innerText = productoCategoria.categoria.nombre;
-
-        } else {
+            aside.classList.remove("aside-visible");
+            aside.classList.add("aside");
+            console.log("if")
+       
+        } 
+        // else if (e.currentTarget.id ==="volver"){
+        //     aside.classList.remove("aside-visible");
+        //     aside.classList.add("aside");
+        //     console.log("if2")
+        // }
+        else {
             cargarProductos(productos)
             tituloPrincipal.innerText = "Todos los productos"
+            console.log("else")
         }
-
+        
     })
 })
 
