@@ -463,3 +463,6 @@ ul {
 .volver {
     display:none ;
 }
+.aside li {
+    margin-bottom: 1rem;
+}

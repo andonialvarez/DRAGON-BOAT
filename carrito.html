@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="styles/helpers.css">
     <link rel="stylesheet" href="productos.js">
     <link rel="stylesheet" href="carrito.js">
+    <link rel="stylesheet" href="./styles/mediaquery.css">
+
 
 </head>
 <body>
@@ -35,13 +37,22 @@
     <div class="fixed_img"><img src="" alt="">
         <h1>Compra ya</h1>
     </div>
-<div class="coleccion">
+    <main>
+        <h2 id="tituloPrincipal">Titulo principal</h2>
+        <h3 id="open-menu" class ="open-menu volver"><i class="fa-solid fa-bars"></i></h3>
+<div class="coleccion carrito">
     <div class="aside">
         <ul>
             <li>
                 <button class="boton-menu"><a href="./index.html"> <i class="fa-solid fa-tag"></i>Seguir comprando</a></button>
             </li>
-
+            <li>
+                <button id="todos" class="boton-menu boton-categoria active"><i class="fa-solid fa-tag"></i>Todos los productos</button>
+            </li>
+            <li>
+                <button id= "close-menu" class="boton-menu boton-categoria volver"><i class="fa-solid fa-tag"></i>Volver</button>
+            </li>
+            <li>
                 <a class= "boton-menu boton-carrito active" href="./carrito.html">Carrito
                     <i class="fa-solid fa-cart-shopping"></i></a>
             </li>
@@ -49,7 +60,7 @@
         </ul>
     </div>
 
-    <!-- <main> -->
+
     <div class="contenedor_carrito">
         <h2 class="titulo-principal">Carrito<h2>
         <p id="carrito-vacio" class="carrito-vacio">Tu carrito esta vacio. <i class="fa-regular fa-face-sad-tear"></i></p>
@@ -139,7 +150,7 @@
 </div>
 <!-- </main> -->
 
-
+</main>
     <div class="informacion">
         <div class="titulo">Informacion</div>
         <div class="productos">
@@ -177,3 +188,4 @@
     </div>
 
     <script src="./carrito.js"></script>
+    <script src="menu.js"></script>

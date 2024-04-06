@@ -136,8 +136,8 @@
     }
 
     .carrito-acciones {
-        flex-wrap: wrap;
         row-gap: 1rem;
+        height: 100%;
     }
     
     .informacion > .productos {
@@ -152,7 +152,22 @@
     .volver {
         display:block ;
     }
+    .spacer {
+        display: none;
+    }
+    .carrito {
+        grid-template-columns: 1fr;
+    }
+    .contenedor_carrito  {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
 
+    .carrito-producto {
+        padding: 0.2rem;
+    }
+
+    
 }
 @media screen and (max-width: 400px) {
     .contenedor-productos {
